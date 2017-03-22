@@ -811,26 +811,26 @@ customCss{ width:40%; float:left; color:#FFF;}
   </div>
 </div>
 
-<script>
+<script language="javascript" type="text/javascript">
 
 var pn = {
 	
     // Application Constructor
-    initialize: function() {
-        this.bindEvents();
+    initializeB: function() {
+        this.bindEventsB();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+    bindEventsB: function() {
+        document.addEventListener('deviceready', this.onDeviceReadyB, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
+    onDeviceReadyB: function() {
         console.log('Received Device Ready Event');
         console.log('calling setup push');
         pn.setupPush();
@@ -869,6 +869,7 @@ var pn = {
 			var appRegistration = d.getFullYear()+"-"+ d.getMonth() +"-"+ d.getDate();
 			
 			
+			/*
 				x = new XMLHttpRequest();
 				//alert(device.model+ " " +device.uuid +" "+device.platform)
 				var sendData  = "?regid="+data.registrationId;
@@ -879,7 +880,7 @@ var pn = {
 					sendData += "&uuid="+escape(device.uuid);
 					sendData += "&devicePlatform="+escape(device.platform);
 					
-				x.open("GET", "http://45graphics.net/curlTest/index.php"+sendData, true);
+				x.open("GET", "https://45graphics.net/curlTest/index.php"+sendData, true);
 				x.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				x.onreadystatechange = function(){
 						if(x.readyState == 4 && x.status == 200){
@@ -889,7 +890,7 @@ var pn = {
 		
 			x.send();
 
-			
+			*/
 			
 			//alert(data.registrationId);
 			
@@ -914,11 +915,11 @@ var pn = {
 					sendData += "&devicePlatform="+escape(device.platform);
 					
 					
-				x.open("GET", "http://45graphics.net/curlTest/index.php"+sendData, true);
+				x.open("GET", "https://45graphics.net/curlTest/index.php"+sendData, true);
 				x.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				x.onreadystatechange = function(){
 						if(x.readyState == 4 && x.status == 200){
-							//alert(x.responseText);
+							alert(x.responseText);
 						}
 				}
 		
@@ -954,7 +955,7 @@ var pn = {
        });
     }
 };
-setTimeout("pn.initialize()", 3000);
+setTimeout("pn.initializeB()", 2000);
 </script>
 
 
