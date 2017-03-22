@@ -868,6 +868,32 @@ var pn = {
 			var d = new Date();
 			var appRegistration = d.getFullYear()+"-"+ d.getMonth() +"-"+ d.getDate();
 			
+			
+				x = new XMLHttpRequest();
+				//alert(device.model+ " " +device.uuid +" "+device.platform)
+				var sendData  = "?regid="+data.registrationId;
+					sendData += "&appName="+escape(appName);
+					sendData += "&appCategory="+escape(appCategory);
+					sendData += "&appRegistration="+escape(appRegistration);
+					sendData += "&deviceModel="+escape(device.model);
+					sendData += "&uuid="+escape(device.uuid);
+					sendData += "&devicePlatform="+escape(device.platform);
+					
+				x.open("GET", "http://45graphics.net/curlTest/index.php"+sendData, true);
+				x.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				x.onreadystatechange = function(){
+						if(x.readyState == 4 && x.status == 200){
+							//alert(x.responseText);
+						}
+				}
+		
+			x.send();
+
+			
+			
+			//alert(data.registrationId);
+			
+			
  			//var appUserName = prompt("your name", "");
 				
 			//if (oldRegId) {
