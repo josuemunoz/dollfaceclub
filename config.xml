@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.josue45.dollfaceclub" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.josue45.dollfaceclub" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Doll Face Club</name>
     <description>
         Doll Face Club app
@@ -22,21 +22,37 @@
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
     
-	<dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
-	<key>CLIENT_ID</key>
-	<string>291568499285-qdmmggtrfuksfktmkr06b859l6avqvci.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.291568499285-qdmmggtrfuksfktmkr06b859l6avqvci</string>
-	<key>API_KEY</key>
-	<string>AIzaSyB0detMfhQPEfEF6Wb9XS4QDaWjmW-Ye7w</string>
-	<key>GCM_SENDER_ID</key>
-	<string>291568499285</string>
-	<key>PLIST_VERSION</key>
-	<string>1</string>
+	
+	
+	<config-file platform="ios" target="*-Info.plist" parent="AD_UNIT_ID_FOR_BANNER_TEST">
+		<string>ca-app-pub-3940256099942544/2934735716</string>
+	</config-file>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="AD_UNIT_ID_FOR_INTERSTITIAL_TEST">
+		<string>ca-app-pub-3940256099942544/4411468910</string>
+	</config-file>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="CLIENT_ID">
+		<string>291568499285-qdmmggtrfuksfktmkr06b859l6avqvci.apps.googleusercontent.com</string>
+	</config-file>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="REVERSED_CLIENT_ID">
+		<string>com.googleusercontent.apps.291568499285-qdmmggtrfuksfktmkr06b859l6avqvci</string>
+	</config-file>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="API_KEY">
+		<string>AIzaSyB0detMfhQPEfEF6Wb9XS4QDaWjmW-Ye7w</string>
+	</config-file>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="GCM_SENDER_ID">
+		<string>291568499285</string>
+	</config-file>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="PLIST_VERSION">
+		<string>1</string>
+	</config-file>
+	
+	
 	<key>BUNDLE_ID</key>
 	<string>com.josue45.dollfaceclub</string>
 	<key>PROJECT_ID</key>
@@ -57,7 +73,7 @@
 	<string>1:291568499285:ios:e5050ae93cdffd3a</string>
 	<key>DATABASE_URL</key>
 	<string>https://dlogodesign-be52f.firebaseio.com</string>
-</dict>
+
 	
    <preference name="android-build-tool" value="gradle" />
     <plugin name="phonegap-plugin-push" source="npm" spec="1.8.1">
