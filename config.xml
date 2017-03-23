@@ -24,35 +24,20 @@
     
 	
 	
-	<config-file platform="ios" target="*-Info.plist" parent="AD_UNIT_ID_FOR_BANNER_TEST">
-		<string>ca-app-pub-3940256099942544/2934735716</string>
-	</config-file>
-	
-	<config-file platform="ios" target="*-Info.plist" parent="AD_UNIT_ID_FOR_INTERSTITIAL_TEST">
-		<string>ca-app-pub-3940256099942544/4411468910</string>
-	</config-file>
-	
-	<config-file platform="ios" target="*-Info.plist" parent="CLIENT_ID">
-		<string>291568499285-qdmmggtrfuksfktmkr06b859l6avqvci.apps.googleusercontent.com</string>
-	</config-file>
-	
-	<config-file platform="ios" target="*-Info.plist" parent="REVERSED_CLIENT_ID">
-		<string>com.googleusercontent.apps.291568499285-qdmmggtrfuksfktmkr06b859l6avqvci</string>
-	</config-file>
-	
-	<config-file platform="ios" target="*-Info.plist" parent="API_KEY">
-		<string>AIzaSyB0detMfhQPEfEF6Wb9XS4QDaWjmW-Ye7w</string>
-	</config-file>
-	
-	<config-file platform="ios" target="*-Info.plist" parent="GCM_SENDER_ID">
-		<string>291568499285</string>
-	</config-file>
-	
-	<config-file platform="ios" target="*-Info.plist" parent="PLIST_VERSION">
-		<string>1</string>
-	</config-file>
-	
-	
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>291568499285-qdmmggtrfuksfktmkr06b859l6avqvci.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.291568499285-qdmmggtrfuksfktmkr06b859l6avqvci</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB0detMfhQPEfEF6Wb9XS4QDaWjmW-Ye7w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>291568499285</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.josue45.dollfaceclub</string>
 	<key>PROJECT_ID</key>
